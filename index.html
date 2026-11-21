@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d32">
+  <meta name="description" content="Mango Wedding — wedding photography, films and destination celebrations.">
+  <title>Mango Wedding | Stories That Stay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <div class="top-progress" id="progress"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Mango Wedding home"><span class="brand-mark">M</span><span>MANGO <i>WEDDING</i></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#stories">Stories</a><a href="#films">Films</a><a href="#services">Services</a><a href="#about">About</a><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media">
+        <!-- Add your own compressed, licensed hero video as /assets/hero.mp4 and poster as /assets/hero-poster.jpg -->
+        <video id="heroVideo" autoplay muted loop playsinline preload="none" poster="/assets/hero-poster.jpg" aria-label="Wedding film background">
+          <source src="/assets/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-shade"></div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">KERALA · INDIA · EVERYWHERE</p>
+        <h1>Stories that stay<br><em>for a lifetime.</em></h1>
+        <p class="hero-copy">Honest moments. Beautifully told. Wedding photography and films crafted with heart.</p>
+        <a class="round-link" href="#stories">Explore our stories <span>↓</span></a>
+      </div>
+      <div class="hero-foot"><span>PHOTOGRAPHY / FILMS / FEELINGS</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow">A LITTLE ABOUT US</p>
+      <h2>Not just how it looked.<br><em>How it felt.</em></h2>
+      <p class="intro-text">We capture the in-between glances, the happy chaos, the quiet promises and all the little moments that make your celebration yours.</p>
+    </section>
+
+    <section class="work section-wrap" id="stories">
+      <div class="section-heading"><div><p class="eyebrow">THE PORTFOLIO</p><h2>Some stories <em>we love.</em></h2></div><p>Real people. Real moments.<br>Memories made to revisit.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="all">All stories</button>
+        <button class="filter" data-category="Wedding">Weddings</button>
+        <button class="filter" data-category="Destination Wedding">Destination</button>
+        <button class="filter" data-category="Fashion">Fashion</button>
+        <button class="filter" data-category="Baby Shoot">Baby shoots</button>
+      </div>
+      <div class="gallery" id="gallery">
+        <div class="empty-state">The portfolio is getting ready. Check back soon.</div>
+      </div>
+    </section>
+
+    <section class="film-band" id="films">
+      <div><p class="eyebrow">MORE THAN A PHOTOGRAPH</p><h2>Press play.<br><em>Feel it all again.</em></h2></div>
+      <p>Wedding films that bring back the voices, the movement and the feeling of being right there.</p>
+      <a class="round-link light" href="#contact">Plan your story <span>↗</span></a>
+    </section>
+
+    <section class="services section-wrap" id="services">
+      <p class="eyebrow">WHAT WE DO</p><h2>Made around <em>your moments.</em></h2>
+      <div class="service-grid">
+        <article><span>01</span><h3>Wedding Stories</h3><p>Thoughtful photography for every chapter of your wedding day.</p></article>
+        <article><span>02</span><h3>Destination Weddings</h3><p>Celebrations in beautiful places, documented with care.</p></article>
+        <article><span>03</span><h3>Fashion & Portraits</h3><p>Creative portraits, campaigns and personal style stories.</p></article>
+        <article><span>04</span><h3>Baby Shoots & Media</h3><p>Little milestones, broadcasts and media production.</p></article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-image"><div class="image-note">THE ART OF<br>REMEMBERING</div></div>
+      <div class="about-copy"><p class="eyebrow">MEET MANGO WEDDING</p><h2>We notice the<br><em>little things.</em></h2><p>Our approach is simple: be present, make you comfortable, and tell your story with authenticity. Every couple is different, and every film and frame should feel that way.</p><a href="#contact" class="text-link">Tell us your story ↗</a></div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <p class="eyebrow">YOUR STORY STARTS HERE</p><h2>Let's make<br><em>something timeless.</em></h2>
+      <p class="contact-lead">Tell us a little about your plans. We'd love to hear from you.</p>
+      <div class="contact-actions">
+        <a class="contact-button" id="whatsappLink" href="https://wa.me/919961725518" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+        <a class="contact-button outline" id="instagramLink" href="https://www.instagram.com/mango__weddings/" target="_blank" rel="noopener">Instagram ↗</a>
+      </div>
+      <div class="contact-details"><a id="phone1Link" href="tel:+919961725518">+91 9961725518</a><a id="phone2Link" href="tel:+919447037718">+91 9447037718</a><span id="emailText"></span></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">M</span><span>MANGO <i>WEDDING</i></span></a><span>MADE WITH CARE · © <span id="year"></span> MANGO WEDDING</span><a href="/admin.html">Admin ↗</a></footer>
+  <div class="media-viewer" id="viewer" aria-hidden="true"><button id="viewerClose" aria-label="Close image">×</button><div id="viewerContent"></div></div>
+</body>
+</html>

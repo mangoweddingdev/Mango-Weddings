@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mango Wedding | Admin</title><link rel="stylesheet" href="/css/style.css"><script type="module" src="/js/admin.js"></script></head>
+<body class="admin-body">
+  <main class="admin-shell">
+    <a class="brand" href="/"><span class="brand-mark">M</span><span>MANGO <i>WEDDING</i></span></a>
+    <section class="admin-card" id="loginPanel"><p class="eyebrow">PRIVATE AREA</p><h1>Welcome <em>back.</em></h1><p>Sign in to manage the portfolio.</p>
+      <form id="loginForm"><label>Email<input name="email" type="email" autocomplete="username" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><button class="contact-button" type="submit">Sign in</button><p class="form-message" id="loginMessage" role="status"></p></form>
+    </section>
+    <section class="admin-card hidden" id="dashboard">
+      <div class="admin-heading"><div><p class="eyebrow">CONTENT MANAGEMENT</p><h1>Your <em>stories.</em></h1></div><button id="logoutButton" class="text-link">Sign out ↗</button></div>
+      <form id="uploadForm" class="upload-form" enctype="multipart/form-data"><h2>Add a project</h2>
+        <label>Project title<input name="title" required maxlength="100"></label>
+        <label>Category<select name="category"><option>Wedding</option><option>Destination Wedding</option><option>Fashion</option><option>Baby Shoot</option><option>Media Production</option></select></label>
+        <label>Short description<textarea name="description" maxlength="500"></textarea></label>
+        <label>Photo or video<input name="media" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/webm" required></label>
+        <label class="check-label"><input type="checkbox" name="featured" value="true"> Feature this project</label>
+        <button class="contact-button" type="submit">Upload project</button><p class="form-message" id="uploadMessage" role="status"></p>
+      </form>
+      <div class="admin-projects"><h2>Published projects</h2><div id="adminProjects"></div></div>
+      <form id="settingsForm" class="upload-form"><h2>Contact details</h2>
+        <label>Business name<input name="businessName"></label><label>Instagram URL<input name="instagram" type="url"></label>
+        <label>Phone 1<input name="phone1"></label><label>Phone 2<input name="phone2"></label>
+        <label>WhatsApp number (country code + number, no +)<input name="whatsapp"></label><label>Email<input name="email" type="email"></label>
+        <button class="contact-button" type="submit">Save details</button><p class="form-message" id="settingsMessage" role="status"></p>
+      </form>
+    </section>
+    <p class="admin-back"><a href="/">← Back to website</a></p>
+  </main>
+</body></html>
